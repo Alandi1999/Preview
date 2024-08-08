@@ -1,0 +1,860 @@
+[
+    {
+        "id": 1,
+        "nombre": "Colchoneta Mir",
+        "precio": 123.00,
+        "imagen": "img/imagen para catalogo/Imagen_1.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Colchoneta Mir",
+        "categorias": ["Colchonetas", "Mirfitness"]
+    },
+    {
+        "id": 2,
+        "nombre": "Colchoneta Mir",
+        "precio": 150.00,
+        "imagen": "img/imagen para catalogo/Imagen_2.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Colchoneta Mir",
+        "categorias": ["Colchonetas", "Mirfitness"]
+    },
+    {
+        "id": 3,
+        "nombre": "Colchoneta",
+        "precio": 123.00,
+        "imagen": "img/imagen para catalogo/Imagen_8.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Colchoneta",
+        "categorias": ["Colchonetas", "Economicas"]
+    },
+    {
+        "id": 4,
+        "nombre": "Barra",
+        "precio": 150.00,
+        "imagen": "img/imagen para catalogo/Imagen_17.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Barra",
+        "categorias": ["Fundicion", "Barras", "BarrasOlimpicas", "Importadas"]
+    },
+    {
+        "id": 5,
+        "nombre": "Soga Triceps",
+        "precio": 123.00,
+        "imagen": "img/imagen para catalogo/Imagen_52.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en ",
+        "categorias": ["AccesoriosPolea", "SogaTriceps"]
+    },
+    {
+        "id": 6,
+        "nombre": "Barra recta para triceps con agarre de goma",
+        "precio": 200.00,
+        "imagen": "img/imagen para catalogo/Imagen_61.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Barra recta para triceps con agarre de goma",
+        "categorias": ["Fundicion", "Barras", "Barras30mm", "Nacionales"]
+    },
+    {
+        "id": 7,
+        "nombre": "Barra simple para dorsalera",
+        "precio": 700.00,
+        "imagen": "img/imagen para catalogo/Imagen_63.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Barra simple para dorsalera",
+        "categorias": ["Fundicion", "Barras", "Barras30mm", "Nacionales"]
+    },
+    {
+        "id": 8,
+        "nombre": "Soga",
+        "precio": 150.00,
+        "imagen": "img/imagen para catalogo/Imagen_76.jpeg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Soga",
+        "categorias": ["Sogas", "SogasSalto"]
+    },
+    {
+        "id": 9,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 10,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 11,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 12,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 13,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 14,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 15,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 16,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 17,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 18,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 19,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 20,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 21,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 22,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 23,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 24,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 25,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 26,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 27,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 28,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 29,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 30,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 31,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 32,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 33,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 34,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 35,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 36,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 37,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 38,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 39,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 40,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 41,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 42,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 43,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 44,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 45,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 46,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 47,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 48,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 49,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 50,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 51,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 52,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 53,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 54,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 55,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 56,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 57,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 58,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 59,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 60,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 61,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 62,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 63,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 64,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 65,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 66,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 67,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 68,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 69,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 70,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 71,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 72,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 73,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 74,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 75,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 76,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 77,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 78,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 79,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 80,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 81,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 82,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 83,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 84,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 85,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 86,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 87,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 88,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 89,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 90,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 91,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 92,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 93,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 94,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 95,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 96,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 97,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 98,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 99,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 100,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 101,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 102,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 103,
+        "nombre": "Producto 1",
+        "precio": 123.00,
+        "imagen": "img/product-1.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 1",
+        "categorias": ["Fundición", "Pesas", "Básico"]
+    },
+    {
+        "id": 104,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 105,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 106,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    },
+    {
+        "id": 107,
+        "nombre": "Producto 2",
+        "precio": 150.00,
+        "imagen": "img/product-2.jpg",
+        "mensajeWhatsapp": "Hola, estoy interesado en Producto 2",
+        "categorias": ["Mancuernas", "Caucho", "Importadas"]
+    }
+
+    
+]

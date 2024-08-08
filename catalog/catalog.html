@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>Integral Fitness</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+</head>
+
+<body class="main-layout">
+
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo">
+                                    <a href="index.html"><img src="img/Integral Reducido.png" alt="#" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 offset-md-1">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarsExample04">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../service.html">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../gallery.html">Galeria</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="../contact.html">Contacto</a>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" href="catalog.html">Catalogo</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header inner -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-1 px-xl-5">
+        </div>
+        <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
+            <div class="col-lg-4">
+                <span class="h1 text-uppercase text-primary bg-dark px-2">Productos</span>
+            </div>
+            <div class="col-lg-4 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Busqueda">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-dark mb-30">
+        <div class="row px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn d-flex align-items-center justify-content-between bg-primary w-100" data-toggle="collapse"
+                    href="#navbar-vertical" style="height: 65px; padding: 0 30px;">
+                    <h6 class="text-dark m-0"><i class="fa fa-bars mr-2"></i>Categorias</h6>
+                    <i class="fa fa-angle-down text-dark"></i>
+                </a>
+                <nav class="collapse position-absolute navbar navbar-vertical navbar-light align-items-start p-0 bg-light"
+                    id="navbar-vertical" style="width: calc(100% - 30px); z-index: 999;">
+                    <div class="navbar-nav w-100">
+                        <!-- Categorías -->
+                        <div class="categories-menu">
+                            <ul class="category-level-1">
+                                <li data-id="1" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#">Fundición</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="2" onmouseenter="openSubcategories(this)"
+                                            onmouseleave="closeSubcategories(this)"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Pesas')">Pesas</a>
+                                            <ul class="category-level-3">
+                                                <li data-id="3"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Basico')">Básico</a></li>
+                                                <li data-id="4"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Intermedio')">Intermedio</a>
+                                                </li>
+                                                <li data-id="5"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Premium')">Premium</a></li>
+                                            </ul>
+                                        </li>
+                                        <li data-id="6" onmouseenter="openSubcategories(this)"
+                                            onmouseleave="closeSubcategories(this)"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Barras')">Barras</a>
+                                            <ul class="category-level-3">
+                                                <li data-id="7" onmouseenter="openSubcategories(this)"
+                                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Barras30mm')">Barras
+                                                        30mm</a>
+                                                    <ul class="category-level-4">
+                                                        <li data-id="8"><a href="#"
+                                                                onclick="mostrarProductosFiltrados('Nacionales')">Nacionales</a>
+                                                        </li>
+                                                        <li data-id="9"><a href="#"
+                                                                onclick="mostrarProductosFiltrados('Importadas')">Importadas</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li data-id="10" onmouseenter="openSubcategories(this)"
+                                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('BarrasOlimpicas')">Barras
+                                                        Olímpicas</a>
+                                                    <ul class="category-level-4">
+                                                        <li data-id="11"><a href="#"
+                                                                onclick="mostrarProductosFiltrados('Premium')">Premium</a>
+                                                        </li>
+                                                        <li data-id="12"><a href="#"
+                                                                onclick="mostrarProductosFiltrados('Nacionales')">Nacionales</a>
+                                                        </li>
+                                                        <li data-id="13"><a href="#"
+                                                                onclick="mostrarProductosFiltrados('Importadas')">Importadas</a>
+                                                        </li>
+                                                        <li data-id="14"><a href="#"
+                                                                onclick="mostrarProductosFiltrados('Topes')">Topes</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-id="15" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Bumpers')">Bumpers</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="16"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Economicos')">Económicos</a></li>
+                                        <li data-id="17"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CauchoReciclado')">Caucho
+                                                reciclado</a></li>
+                                        <li data-id="18"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CauchoVirgen')">Caucho Virgen</a>
+                                        </li>
+                                        <li data-id="19"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Importados')">Importados</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="20" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Mancuernas')">Mancuernas</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="21" onmouseenter="openSubcategories(this)"
+                                            onmouseleave="closeSubcategories(this)"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Caucho')">Caucho</a>
+                                            <ul class="category-level-3">
+                                                <li data-id="22"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Importadas')">Importadas</a>
+                                                </li>
+                                                <li data-id="23"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Nacionales')">Nacionales</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li data-id="24" onmouseenter="openSubcategories(this)"
+                                            onmouseleave="closeSubcategories(this)"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Cromadas')">Cromadas</a>
+                                            <ul class="category-level-3">
+                                                <li data-id="25"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Individuales')">Individuales</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-id="26" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('BodyPumps')">Body Pumps</a></li>
+                                <li data-id="27" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('PesasRusas')">Pesas Rusas</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="28"><a href="#" onclick="mostrarProductosFiltrados('PVC')">PVC</a>
+                                        </li>
+                                        <li data-id="29"><a href="#"
+                                                onclick="mostrarProductosFiltrados('FundicionEngomada')">Fundición
+                                                engomada</a></li>
+                                        <li data-id="30"><a href="#"
+                                                onclick="mostrarProductosFiltrados('PuntaCromadaPro')">Punta cromada
+                                                pro</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="31" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Colchonetas')">Colchonetas</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="32"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Economicas')">Económicas</a></li>
+                                        <li data-id="33"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Mirfitness')">Mirfitness</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="34" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Pisos')">Pisos</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="35"><a href="#" onclick="mostrarProductosFiltrados('GomaEva')">Goma
+                                                eva</a></li>
+                                        <li data-id="36"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CauchoVirgenNuevo')">Caucho virgen
+                                                (nuevo)</a></li>
+                                        <li data-id="37"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CauchoReciclado')">Caucho
+                                                reciclado</a></li>
+                                        <li data-id="38"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CauchoRecicladoImportado')">Caucho
+                                                reciclado importado</a></li>
+                                        <li data-id="39"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CauchoVirgen')">Caucho virgen</a>
+                                        </li>
+                                        <li data-id="40"><a href="#"
+                                                onclick="mostrarProductosFiltrados('VinilicoSimilGoma')">Vinílico símil
+                                                goma</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="41" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('CespedSintetico')">Césped Sintético</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="42"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Economicos')">Económicos</a></li>
+                                        <li data-id="43"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Rollos')">Rollos</a></li>
+                                        <li data-id="44"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Premium')">Premium</a></li>
+                                        <li data-id="45"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Deportivos')">Deportivos</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="46" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('BandasElasticas')">Bandas Elásticas</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="47"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Largas')">Largas</a></li>
+                                        <li data-id="48"><a href="#"
+                                                onclick="mostrarProductosFiltrados('PowerbandasDeAsistencia')">Powerbandas
+                                                de asistencia</a></li>
+                                        <li data-id="49"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Kits')">Kits</a></li>
+                                        <li data-id="50"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Cortas')">Cortas</a></li>
+                                        <li data-id="51"><a href="#"
+                                                onclick="mostrarProductosFiltrados('TirabandsLargas')">Tirabands
+                                                largas</a></li>
+                                        <li data-id="52"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Economicas')">Económicas</a></li>
+                                        <li data-id="53"><a href="#"
+                                                onclick="mostrarProductosFiltrados('PowerbandsDeTela')">Powerbands de
+                                                tela</a></li>
+                                        <li data-id="54"><a href="#"
+                                                onclick="mostrarProductosFiltrados('MiniPowerBands')">Mini power
+                                                bands</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="55" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('MedicineBalls')">Medicine Balls</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="56"><a href="#"
+                                                onclick="mostrarProductosFiltrados('BalonesChicos')">Balones chicos</a>
+                                        </li>
+                                        <li data-id="57"><a href="#"
+                                                onclick="mostrarProductosFiltrados('BalonesGrandes')">Balones
+                                                grandes</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="58" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('CoreBags')">Core Bags</a></li>
+                                <li data-id="59" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Suspension')">Suspensión</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="60"><a href="#" onclick="mostrarProductosFiltrados('TRX')">TRX</a>
+                                        </li>
+                                        <li data-id="61"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Anillas')">Anillas</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="62" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Sogas')">Sogas</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="63" onmouseenter="openSubcategories(this)"
+                                            onmouseleave="closeSubcategories(this)"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Crossfit')">Crossfit</a>
+                                            <ul class="category-level-3">
+                                                <li data-id="64"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('BattleRope')">Battle
+                                                        Rope</a></li>
+                                                <li data-id="65"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('ClimbeRope')">Climbe
+                                                        Rope</a></li>
+                                            </ul>
+                                        </li>
+                                        <li data-id="66"><a href="#"
+                                                onclick="mostrarProductosFiltrados('SogasSalto')">Sogas salto</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="67" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Minitramp')">Minitramp</a></li>
+                                <li data-id="68" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Steps')">Steps</a></li>
+                                <li data-id="69" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Bozus')">Bozus</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="70"><a href="#" onclick="mostrarProductosFiltrados('ConBase')">Con
+                                                base</a></li>
+                                        <li data-id="71"><a href="#" onclick="mostrarProductosFiltrados('SinBase')">Sin
+                                                base</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="72" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Tobilleras')">Tobilleras</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="73"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Economicas')">Económicas</a></li>
+                                        <li data-id="74"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Reforzadas')">Reforzadas</a></li>
+                                        <li data-id="75"><a href="#"
+                                                onclick="mostrarProductosFiltrados('PremiumExtreme')">Premium
+                                                Extreme</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="76" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Chalecos')">Chalecos</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="77"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Economicos')">Económicos</a></li>
+                                        <li data-id="78"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Premium')">Premium</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="79" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Boxeo')">Boxeo</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="80" onmouseenter="openSubcategories(this)"
+                                            onmouseleave="closeSubcategories(this)"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Bolsas')">Bolsas</a>
+                                            <ul class="category-level-3">
+                                                <li data-id="81"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('SinRelleno')">Sin
+                                                        relleno</a></li>
+                                                <li data-id="82"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('ConRelleno')">Con
+                                                        relleno</a></li>
+                                            </ul>
+                                        </li>
+                                        <li data-id="83" onmouseenter="openSubcategories(this)"
+                                            onmouseleave="closeSubcategories(this)"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Guantes')">Guantes</a>
+                                            <ul class="category-level-3">
+                                                <li data-id="84"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Guantines')">Guantines</a>
+                                                </li>
+                                                <li data-id="85"><a href="#"
+                                                        onclick="mostrarProductosFiltrados('Profesionales')">Profesionales</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li data-id="86"><a href="#"
+                                                onclick="mostrarProductosFiltrados('EscudoTae')">Escudo tae</a></li>
+                                        <li data-id="87"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CieloYTierra')">Cielo y tierra</a>
+                                        </li>
+                                        <li data-id="88"><a href="#"
+                                                onclick="mostrarProductosFiltrados('CabezalCerrado')">Cabezal
+                                                cerrado</a></li>
+                                        <li data-id="89"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Pera')">Pera</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="90" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('AccesoriosPolea')">Accesorios Polea</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="91"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Tobilleras')">Tobilleras</a></li>
+                                        <li data-id="92"><a href="#"
+                                                onclick="mostrarProductosFiltrados('SogaTriceps')">Soga triceps</a></li>
+                                        <li data-id="93"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Agarres')">Agarres</a></li>
+                                        <li data-id="94"><a href="#"
+                                                onclick="mostrarProductosFiltrados('BarritaTriceps')">Barrita
+                                                triceps</a></li>
+                                        <li data-id="95"><a href="#"
+                                                onclick="mostrarProductosFiltrados('BarraParaDorsalera')">Barra para
+                                                dorsalera</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="96" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('ProtectoresCervicales')">Protectores
+                                        Cervicales</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="97"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Rectangular')">Rectangular</a></li>
+                                        <li data-id="98"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Cilindrico')">Cilíndrico</a></li>
+                                    </ul>
+                                </li>
+                                <li data-id="99" onmouseenter="openSubcategories(this)"
+                                    onmouseleave="closeSubcategories(this)"><a href="#"
+                                        onclick="mostrarProductosFiltrados('Rolos')">Rolos</a>
+                                    <ul class="category-level-2">
+                                        <li data-id="100"><a href="#"
+                                                onclick="mostrarProductosFiltrados('Economicos')">Económicos</a></li>
+                                        <li data-id="101"><a href="#" onclick="mostrarProductosFiltrados('Mir')">Mir</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li data-id="102"><a href="#"
+                                        onclick="mostrarProductosFiltrados('MaterialesPVC')">Materiales PVC</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <div class="col-12">
+                <nav class="breadcrumb bg-light mb-30">
+                    <a class="breadcrumb-item text-dark" href="#">Inicio</a>
+                    <a class="breadcrumb-item text-dark" href="#">Tienda</a>
+                    <span class="breadcrumb-item active">Lista</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Shop Start -->
+    <div class="container-fluid">
+        <div class="row px-xl-5">
+            <!-- Shop Sidebar Start -->
+            <div class="col-lg-3 col-md-4">
+                <!-- Price Start -->
+                <h5 class="section-title position-relative text-uppercase mb-3"><span class="bg-secondary pr-3">Filtro
+                        por precio</span></h5>
+                <div class="bg-light p-4 mb-30">
+                    <form id="price-filter-form">
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" checked id="price-all" data-min="0"
+                                data-max="Infinity">
+                            <label class="custom-control-label" for="price-all">Todos los Precios</label>
+                            <span class="badge border font-weight-normal">1000</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-1" data-min="0"
+                                data-max="100">
+                            <label class="custom-control-label" for="price-1">$0 - $100</label>
+                            <span class="badge border font-weight-normal">150</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-2" data-min="100"
+                                data-max="200">
+                            <label class="custom-control-label" for="price-2">$100 - $200</label>
+                            <span class="badge border font-weight-normal">295</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-3" data-min="200"
+                                data-max="300">
+                            <label class="custom-control-label" for="price-3">$200 - $300</label>
+                            <span class="badge border font-weight-normal">246</span>
+                        </div>
+                        <div
+                            class="custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3">
+                            <input type="checkbox" class="custom-control-input" id="price-4" data-min="300"
+                                data-max="400">
+                            <label class="custom-control-label" for="price-4">$300 - $400</label>
+                            <span class="badge border font-weight-normal">145</span>
+                        </div>
+                        <div class="custom-control custom-checkbox d-flex align-items-center justify-content-between">
+                            <input type="checkbox" class="custom-control-input" id="price-5" data-min="400"
+                                data-max="500">
+                            <label class="custom-control-label" for="price-5">$400 - $500</label>
+                            <span class="badge border font-weight-normal">168</span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Price End -->
+            </div>
+            <!-- Shop Sidebar End -->
+
+            <!-- Shop Product Start -->
+            <div class="col-lg-9 col-md-8">
+                <div class="row pb-3">
+                    <div class="col-12 pb-1">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="ml-2">
+                                <div class="btn-group ml-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product List Start -->
+                    <div id="product-list" class="row">
+                        <!-- Los productos se generarán dinámicamente aquí -->
+                    </div>
+                    <!-- Product List End -->
+
+                    <div class="col-12">
+                        <nav>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Shop Product End -->
+        </div>
+    </div>
+    <!-- Shop End -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 col-sm-6">
+                        <p class="variat pad_roght2"></p>
+                    </div>
+                    <div class=" col-md-3 col-sm-6">
+                        <h3>Contactanos</h3>
+                        <p class="variat pad_roght2">Por nuestras redes</p>
+                        <ul class="social_icon">
+                            <li><a href="https://web.facebook.com/people/Cesped-Cesped/pfbid02G4bGc8sqfwJTsF75zkXrzdtiR8TY8YTruUbTcPKsMCGQLGSNmRYDKJ2UtSSdU6Upl/?mibextid=ZbWKwL"
+                                    target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.instagram.com/integral_fitnesss" target="_blank"><i
+                                        class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <p class="variat pad_roght2">Mandanos Un Mensaje!</p>
+                        <p class="variat pad_roght2"><i class="fa fa-whatsapp social_icon" style="font-size:24px"
+                                aria-hidden="true"></i><a href="https://api.whatsapp.com/send/?phone=3855769694"
+                                target="_blank">3855769694</a></p>
+                        <p class="variat pad_roght2"><i class="fa fa-whatsapp social_icon" style="font-size:24px"
+                                aria-hidden="true"></i><a href="https://api.whatsapp.com/send/?phone=3845406503"
+                                target="_blank">3845406503</a></p>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h3>INFORMACIÓN</h3>
+                        <ul class="link_menu">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="service.html">Servicios</a></li>
+                            <li><a href="gallery.html">Galeria</a></li>
+                            <li><a href="contact.html">Contactanos</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h3></h3>
+                        <p class="variat"></p>
+                    </div>
+                    <div class="col-md-6 offset-md-6"></div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <p>Design by <a href="https://www.instagram.com/active.talent/" target="_blank"> Active
+                                    Talent
+                                </a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
