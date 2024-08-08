@@ -10,6 +10,7 @@ const productosPorPagina = 12;
 let productos = [];
 let categoriaSeleccionada = 'Todos';
 let filtrosPrecios = [];
+let terminoBusqueda = '';
 
 // Función para cargar los datos del JSON
 async function cargarDatos() {
@@ -105,7 +106,7 @@ function filtrarProductosPorCategoria(categoria) {
     return productos.filter(producto => producto.categorias.includes(categoria));
 }
 
-// Función para filtrar productos por categoría y precio
+// Función para filtrar productos por categoría, precio y término de búsqueda
 function filtrarProductos() {
     let productosFiltrados = productos;
 
@@ -118,6 +119,13 @@ function filtrarProductos() {
             return filtrosPrecios.some(filtro => {
                 return producto.precio >= filtro.min && producto.precio <= filtro.max;
             });
+        });
+    }
+
+    if (terminoBusqueda) {
+        productosFiltrados = productosFiltrados.filter(producto => {
+            return producto.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase()) ||
+                   producto.categorias.some(cat => cat.toLowerCase().includes(terminoBusqueda.toLowerCase()));
         });
     }
 
@@ -145,6 +153,15 @@ function actualizarFiltrosPrecios() {
 document.querySelectorAll('#price-filter-form input[type="checkbox"]').forEach(checkbox => {
     checkbox.addEventListener('change', actualizarFiltrosPrecios);
 });
+
+// Función para manejar la búsqueda
+function manejarBusqueda(event) {
+    terminoBusqueda = event.target.value;
+    mostrarProductosFiltrados(categoriaSeleccionada);
+}
+
+// Añadir evento al campo de búsqueda
+document.getElementById('search-bar').addEventListener('input', manejarBusqueda);
 
 // Inicializar la carga de productos al cargar la página
 document.addEventListener('DOMContentLoaded', cargarDatos);
