@@ -10,6 +10,7 @@ const productosPorPagina = 12;
 let productos = [];
 let categoriaSeleccionada = 'Todos';
 let filtrosPrecios = [];
+let terminoBusqueda = '';
 
 // Función para cargar los datos del JSON
 async function cargarDatos() {
@@ -94,7 +95,7 @@ function actualizarPaginacion(productosFiltrados) {
 // Función para cambiar de página
 function cambiarPagina(pagina) {
     paginaActual = pagina;
-    mostrarProductosConPaginacion(filtrarProductosPorCategoria(categoriaSeleccionada));
+    mostrarProductosConPaginacion(filtrarProductos());
 }
 
 // Función para filtrar productos por categoría
@@ -105,69 +106,12 @@ function filtrarProductosPorCategoria(categoria) {
     return productos.filter(producto => producto.categorias.includes(categoria));
 }
 
-
-// Función para mostrar productos filtrados
-function mostrarProductosFiltrados(categoria) {
-    categoriaSeleccionada = categoria;
-    paginaActual = 1; // Reiniciar a la primera página al cambiar de categoría
-    mostrarProductosConPaginacion(filtrarProductosPorCategoria(categoria));
-}
-
-// Inicializar la carga de productos al cargar la página
-document.addEventListener('DOMContentLoaded', cargarDatos);
-
-// Mantener referencias a los temporizadores para cada categoría
-const timeoutIds = {};
-
-document.querySelectorAll('.categories-menu li').forEach(li => {
-    li.addEventListener('mouseenter', () => {
-        // Limpiar cualquier temporizador que esté ejecutándose
-        if (timeoutIds[li.dataset.id]) {
-            clearTimeout(timeoutIds[li.dataset.id]);
-        }
-
-        // Mostrar el submenú con una pequeña demora
-        const submenu = li.querySelector('ul');
-        if (submenu) {
-            submenu.classList.add('show');
-        }
-    });
-
-    li.addEventListener('mouseleave', () => {
-        // Establecer un temporizador para cerrar el submenú después de un pequeño retraso
-        const submenu = li.querySelector('ul');
-        if (submenu) {
-            timeoutIds[li.dataset.id] = setTimeout(() => {
-                submenu.classList.remove('show');
-            }, 300); // Ajustar el retraso según sea necesario
-        }
-    });
-});
-
-let timer;
-function openSubcategories(element) {
-    clearTimeout(timer);
-    const subcategories = element.querySelector('ul');
-    if (subcategories) {
-        subcategories.style.display = 'block';
-    }
-}
-
-function closeSubcategories(element) {
-    timer = setTimeout(() => {
-        const subcategories = element.querySelector('ul');
-        if (subcategories) {
-            subcategories.style.display = 'none';
-        }
-    }, 600);
-}
-
-// Función para filtrar productos por categoría y precio
+// Función para filtrar productos por categoría, precio y término de búsqueda
 function filtrarProductos() {
     let productosFiltrados = productos;
 
     if (categoriaSeleccionada !== 'Todos') {
-        productosFiltrados = productosFiltrados.filter(producto => producto.categoria.includes(categoriaSeleccionada));
+        productosFiltrados = productosFiltrados.filter(producto => producto.categorias.includes(categoriaSeleccionada));
     }
 
     if (filtrosPrecios.length > 0) {
@@ -175,6 +119,13 @@ function filtrarProductos() {
             return filtrosPrecios.some(filtro => {
                 return producto.precio >= filtro.min && producto.precio <= filtro.max;
             });
+        });
+    }
+
+    if (terminoBusqueda) {
+        productosFiltrados = productosFiltrados.filter(producto => {
+            return producto.nombre.toLowerCase().includes(terminoBusqueda.toLowerCase()) ||
+                   producto.categorias.some(cat => cat.toLowerCase().includes(terminoBusqueda.toLowerCase()));
         });
     }
 
@@ -203,3 +154,60 @@ document.querySelectorAll('#price-filter-form input[type="checkbox"]').forEach(c
     checkbox.addEventListener('change', actualizarFiltrosPrecios);
 });
 
+// Función para manejar la búsqueda
+function manejarBusqueda(event) {
+    terminoBusqueda = event.target.value;
+    mostrarProductosFiltrados(categoriaSeleccionada);
+}
+
+// Añadir evento al campo de búsqueda
+document.getElementById('search-bar').addEventListener('input', manejarBusqueda);
+
+// Inicializar la carga de productos al cargar la página
+document.addEventListener('DOMContentLoaded', cargarDatos);
+
+// Mantener referencias a los temporizadores para cada categoría
+const timeoutIds = {};
+
+document.querySelectorAll('.categories-menu li').forEach(li => {
+    li.addEventListener('mouseenter', () => {
+        // Limpiar cualquier temporizador que esté ejecutándose
+        if (timeoutIds[li.dataset.id]) {
+            clearTimeout(timeoutIds[li.dataset.id]);
+        }
+
+        // Mostrar el submenú con una pequeña demora
+        const submenu = li.querySelector('ul');
+        if (submenu) {
+            submenu.classList.add('show');
+        }
+    });
+
+    li.addEventListener('mouseleave', () => {
+        // Establecer un temporizador para cerrar el submenú después de un pequeño retraso
+        const submenu = li.querySelector('ul');
+        if (submenu) {
+            timeoutIds[li.dataset.id] = setTimeout(() => {
+                submenu.classList.remove('show');
+            }, 600); // Ajustar el retraso según sea necesario
+        }
+    });
+});
+
+let timer;
+function openSubcategories(element) {
+    clearTimeout(timer);
+    const subcategories = element.querySelector('ul');
+    if (subcategories) {
+        subcategories.style.display = 'block';
+    }
+}
+
+function closeSubcategories(element) {
+    timer = setTimeout(() => {
+        const subcategories = element.querySelector('ul');
+        if (subcategories) {
+            subcategories.style.display = 'none';
+        }
+    }, 600);
+}
